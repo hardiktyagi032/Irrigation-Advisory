@@ -1,0 +1,36 @@
+@import url('style.css');
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background-color: #ffffff;
+}
+
+caption {
+    font-weight: bold;
+    color: #008700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #161616;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: rgb(0, 135, 0);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #e8f5e9;
+}
+
+tfoot td {
+    font-weight: bold;
+    background-color: #e0e0e0;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+    <title>Smart Irrigation System - Farmer Registration</title>
+</head>
+<body>
+
+    <header>
+        <h1>Smart Irrigation System</h1>
+        <p><em>Smart Irrigation using AI & Sensor Technology</em></p>
+    </header>
+
+    <nav>
+        <p>
+            <a href="index.html">Home</a> , 
+            <a href="farm-info.html">Farm Dashboard</a> , 
+            <a href="advisory.html">Irrigation Advisory</a> , 
+            <a href="gallery.html">Gallery</a> , 
+            <a href="plot-map.html">Plot Map</a> ,
+            <a href="irrigation-table.html">Sensor Data</a> , 
+            <a href="registration.html">Registration</a> , 
+            <a href="weather.html">Weather Forecast</a> ,
+            <a href="media.html">Media</a>,
+            <a href="contact.html">Contact Us</a>
+        </p>
+    </nav>
+
+    <main>
+        <section class="form">
+            <h2>Farmer Registration Form</h2>
+            
+            <form action="#" method="POST" enctype="multipart/form-data">
+                
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>
+                        <label for="farmerName"><b>Full Name:</b></label><br>
+                        <input type="text" id="farmerName" name="farmerName" placeholder="e.g. Ramesh Kumar" autofocus required>
+                    </p>
+                    <p>
+                        <label for="mobile"><b>Mobile Number:</b></label><br>
+                        <input type="tel" id="mobile" name="mobile" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+                    </p>
+                    <p>
+                        <label for="email"><b>Email Address:</b></label><br>
+                        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Farm & Agricultural Details</legend>
+                    <p>
+                        <label for="plotId"><b>Plot ID:</b></label><br>
+                        <input type="text" id="plotId" name="plotId" placeholder="e.g. MH-1024-A" pattern="[A-Z0-9\-]+" required>
+                    </p>
+                    <p>
+                        <label for="village"><b>Village Name:</b></label><br>
+                        <input type="text" id="village" name="village" placeholder="Enter your village" required>
+                    </p>
+                    <p>
+                        <label for="cropStage"><b>Crop Stage:</b></label><br>
+                        <select id="cropStage" name="cropStage" required>
+                            <option value="" disabled selected>-- Select Crop Stage --</option>
+                            <option value="Sowing">Sowing / Germination</option>
+                            <option value="Vegetative">Vegetative Growth</option>
+                            <option value="Flowering">Flowering Stage</option>
+                            <option value="Harvesting">Harvesting Stage</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="soilType"><b>Soil Type:</b></label><br>
+                        <select id="soilType" name="soilType" required>
+                            <option value="" disabled selected>-- Select Soil Type --</option>
+                            <option value="Black Soil">Black Soil (Regur)</option>
+                            <option value="Red Soil">Red Soil</option>
+                            <option value="Alluvial Soil">Alluvial Soil</option>
+                            <option value="Sandy Soil">Sandy Soil</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="irrigationMethod"><b>Irrigation Method:</b></label><br>
+                        <select id="irrigationMethod" name="irrigationMethod" required>
+                            <option value="" disabled selected>-- Select Irrigation Method --</option>
+                            <option value="Drip">Drip Irrigation</option>
+                            <option value="Sprinkler">Sprinkler System</option>
+                            <option value="Surface/Flood">Surface / Flood Irrigation</option>
+                            <option value="Manual">Manual Watering</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="regDate"><b>Registration Date:</b></label><br>
+                        <input type="date" id="regDate" name="regDate" required>
+                    </p>
+                    <p>
+                        <label for="farmPhoto"><b>Upload Farm Photo:</b></label><br>
+                        <input type="file" id="farmPhoto" name="farmPhoto" accept="image/*" required>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit" class="submit">Register Farm</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright 2026</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
+</body>
+</html>

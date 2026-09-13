@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="table.css">
+    <title>Soil Moisture & Irrigation Table</title>
+</head>
+<body>
+
+    <header>
+        <h1>Smart Irrigation Advisory</h1>
+        <p><em>Farm Plot Data & Irrigation Schedule</em></p>
+    </header>
+
+    <nav>
+        <p>
+            <a href="index.html">Home</a> , 
+            <a href="farm-info.html">Farm Dashboard</a> , 
+            <a href="advisory.html">Irrigation Advisory</a> , 
+            <a href="gallery.html">Gallery</a> , 
+            <a href="plot-map.html">Plot Map</a> ,
+            <a href="irrigation-table.html">Sensor Data</a> , 
+            <a href="registration.html">Registration</a> , 
+            <a href="weather.html">Weather Forecast</a> ,
+            <a href="media.html">Media</a>,
+            <a href="contact.html">Contact Us</a>
+        </p>
+    </nav>
+
+    <main>
+        <section class="section">
+            <table>
+                <caption><em><mark>Farm Plot Soil Moisture & Irrigation Advisory</mark></em></caption>
+                
+                <thead>
+                    <tr>
+                        <th>Plot ID</th>
+                        <th>Farmer Name</th>
+                        <th>Soil Moisture (%)</th>
+                        <th>Weather</th>
+                        <th>Irrigation Recommendation</th>
+                        <th>Water Requirement</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><b>SUGAR-MH77-A</b></td>
+                        <td rowspan="2">Ramesh Patil</td>
+                        <td>18%</td>
+                        <td>Sunny & Hot</td>
+                        <td><b>Irrigate Immediately</b> (45 Mins)</td>
+                        <td>High (4,500 L)</td>
+                    </tr>
+                    <tr>
+                        <td><b>SUGAR-MH77-B</b></td>
+                        <td>35%</td>
+                        <td>Partly Cloudy</td>
+                        <td><i>Light Irrigation Needed</i> (15 Mins)</td>
+                        <td>Moderate (1,500 L)</td>
+                    </tr>
+                    <tr>
+                        <td><b>COTTON-MH77-C</b></td>
+                        <td>Suresh Kumar</td>
+                        <td>42%</td>
+                        <td>Overcast</td>
+                        <td>No Irrigation Required</td>
+                        <td>Nil (0 L)</td>
+                    </tr>
+                    <tr>
+                        <td><b>WHEAT-MH77-D</b></td>
+                        <td>Anil Deshmukh</td>
+                        <td>12%</td>
+                        <td>Dry & Windy</td>
+                        <td><b>Irrigate Immediately</b> (60 Mins)</td>
+                        <td>Very High (6,000 L)</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Summary Statistics</td>
+                        <td>Average: <b>26.75%</b></td>
+                        <td colspan="2">Total Plots Requiring Water: <b>3 of 4</b></td>
+                        <td>Total: <b>12,000 L</b></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright 2026</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
+</body>
+</html>

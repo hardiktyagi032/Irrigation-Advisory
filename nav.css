@@ -1,0 +1,58 @@
+@import url('style.css');
+
+nav {
+    background-color: skyblue;
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 5px solid var(--border-dark);
+}
+
+nav a {
+    display: inline-block;  
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 2px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #81c784;
+    color: var(--dark-green-hover);
+    text-decoration: underline;
+}
+
+.gallery {
+    background-color: #f5f5dc;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid var(--border-dark);
+}
+
+figure {
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+figcaption {
+    font-weight: bold;
+    color: #2e7d32;
+    margin-top: 8px;
+}
+
+.gallery img, figure img {
+    border: 3px solid var(--primary-green);
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover, figure img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}

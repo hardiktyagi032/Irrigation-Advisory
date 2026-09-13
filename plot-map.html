@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Smart Irrigation System - Farm Plot Navigation</title>
+</head>
+<body>
+
+    <header>
+        <h1>Smart Irrigation System</h1>
+        <p><em>AI-based Smart Irrigation Advisory</em></p>
+    </header>
+
+    <nav>
+        <p>
+            <a href="index.html">Home</a> , 
+            <a href="farm-info.html">Farm Dashboard</a> , 
+            <a href="advisory.html">Irrigation Advisory</a> , 
+            <a href="gallery.html">Gallery</a> , 
+            <a href="plot-map.html">Plot Map</a> ,
+            <a href="irrigation-table.html">Sensor Data</a> , 
+            <a href="registration.html">Registration</a> , 
+            <a href="weather.html">Weather Forecast</a> ,
+            <a href="media.html">Media</a>,
+            <a href="contact.html">Contact Us</a>
+        </p>
+    </nav>
+
+    <main>
+        <section class="content">
+            <div class="content-heading">
+                <h2>Farm Plot Navigation</h2>
+            </div>
+            <p><b>Click on Plot A (Left), Plot B (Middle), or Plot C (Right) on the map to view its details.</b></p>
+            
+            <p>
+                <img src="https://www.shutterstock.com/image-photo/top-view-lush-green-agricultural-600w-2597380809.jpg"
+                     alt="Farm Map" usemap="#farmmap" width="1200" height="600">
+            </p>
+            
+            <map name="farmmap">
+                <area shape="rect" coords="0,0,400,800" alt="Plot A"
+                      href="data:text/html,<h2>Plot A Details</h2><p><b>Crop:</b> Sugarcane (Green Cane)</p><p><b>Irrigation:</b> Drip System</p><p><b>Area:</b> 4.8 Acres</p>"
+                      target="plotframe">
+                <area shape="rect" coords="400,0,700,600" alt="Plot B"
+                      href="data:text/html,<h2>Plot B Details</h2><p><b>Crop:</b> Sugarcane (Purple/Black Cane)</p><p><b>Irrigation:</b> Sprinkler System</p><p><b>Area:</b> 5.4 Acres</p>"
+                      target="plotframe">
+                <area shape="rect" coords="700,0,1200,600" alt="Plot C"
+                      href="data:text/html,<h2>Plot C Details</h2><p><b>Crop:</b> Rice %26 Wheat</p><p><b>Irrigation:</b> Drip System</p><p><b>Area:</b> 3.4 Acres</p>"
+                      target="plotframe">
+            </map>
+
+            <br>
+            <p>
+                <iframe name="plotframe" width="500" height="200"
+                        srcdoc="<p style='text-align:center;'>Click a plot on the map above to display its details here.</p>"></iframe>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright 2026</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
+</body>
+</html>
